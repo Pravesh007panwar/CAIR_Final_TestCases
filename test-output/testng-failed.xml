@@ -3,12 +3,12 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="CAIRTestCases.TC019_CrawlingManagement">
+      <class name="CAIRTestCases.TC001_SupportCrawlingandScraping">
         <methods>
-          <include name="CrawlingManagement"/>
           <include name="beforeTest"/>
+          <include name="supportCrawlingandScraping"/>
         </methods>
-      </class> <!-- CAIRTestCases.TC019_CrawlingManagement -->
+      </class> <!-- CAIRTestCases.TC001_SupportCrawlingandScraping -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

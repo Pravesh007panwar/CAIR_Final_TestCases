@@ -1,0 +1,27 @@
+package CAIR_Final_TestCases;
+
+import org.testng.annotations.AfterClass;
+
+import CAIRObjectRepository.CAIRDashboardPage;
+import CAIRObjectRepository.CAIRHomePage;
+import DataIngestors.InnsightLogin;
+
+public class TC020_Onlinecontentanonymously extends InnsightLogin {
+
+	@AfterClass
+	public void onlinecontent() throws InterruptedException {
+
+		CAIRHomePage hp = new CAIRHomePage(driver);
+		Thread.sleep(2000);
+		hp.Search().sendKeys("India AND Kashmir");
+		Thread.sleep(2000);
+		hp.searchicon().click();
+		Thread.sleep(30000);
+		CAIRDashboardPage dp = new CAIRDashboardPage(driver);
+		dp.DashBoardButton().click();
+		Thread.sleep(20000);
+		driver.quit();
+
+	}
+
+}
